@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UygaBozor - Продукты и Цены</title>
+    <style>
+        /* Стили остаются те же, добавляем новые */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        #sheet-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        #sheet-links a {
+            text-decoration: none;
+            color: #007BFF;
+            padding: 5px 10px;
+            border: 1px solid #007BFF;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        #sheet-links a:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+        #search-box {
+            margin-bottom: 20px;
+        }
+        #search-box input {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        /* Новые стили */
+        .add-to-cart {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .add-to-cart:hover {
+            background-color: #218838;
+        }
+        #cart {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #cart-items {
+            list-style: none;
+            padding: 0;
+        }
+        #cart-items li {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+        }
+        #cart-items li button {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 2px 5px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        #cart-items li button:hover {
+            background-color: #c82333;
+        }
+        #cart-total {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>UygaBozor - Продукты и Цены</h1>
+    <div id="sheet-links">
+        <!-- Ссылки на листы будут добавлены динамически -->
+    </div>
+    <div id="search-box">
+        <input type="text" id="search-input" placeholder="Поиск...">
+    </div>
+    <div id="tables-container">
+        <!-- Таблицы будут добавлены динамически -->
+    </div>
+    <div id="cart">
+        <h2>Корзина</h2>
+        <ul id="cart-items">
+            <!-- Товары в корзине -->
+        </ul>
+        <div id="cart-total">Итого: 0 сум</div>
+        <button id="checkout">Оформить заказ</button>
+    </div>
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/669b8a08becc2fed6928003a/1i37p6d0i';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
